@@ -10,8 +10,8 @@ configs = {
 switch process.env.application_env
 	when "local"
 		configs.mongoURL = "mongodb://localhost/simpledb"
-		configs.host = "localhost"
-		configs.port = "8080"
-		configs.url = "http://localhost:8080"
+		configs.host = "0.0.0.0"
+		configs.port = "80"
+		configs.url = "http://0.0.0.0:80"
 
 module.exports = exports = configs
